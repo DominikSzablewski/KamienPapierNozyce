@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+	margin: 10;
+	padding: 10;
+	background-color: rgb(139, 91, 91);
+	color: white;
+}
+
+p {
+	color: black;
+	background-color: white;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 30px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	background-image: linear-gradient(90deg, rgb(142, 7, 184), rgb(21, 21, 180));
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.containter {
+	display: flex;
+	justify-content: center;
+	padding-top: 25px;
+}
+
+.game {
+	border: 5px solid blueviolet;
+	border-radius: 20px;
+	background-color: white;
+	width: 300px;
+	height: 395px;
+}
+
+/* Wygrana, Przegrana */
+.winlose {
+	display: flex;
+	border-radius: 50px;
+	background-color: white;
+}
+
+.win,
+.lose {
+	display: flex;
+	justify-content: center;
+	width: 150px;
+	background-color: white;
+	border-bottom: 5px solid blueviolet;
+}
+
+.win {
+	background-color: green;
+	border-top-left-radius: 12px;
+}
+
+.win p {
+	color: black;
+	background-color: green;
+}
+
+.lose {
+	background-color: red;
+	border-top-right-radius: 12px;
+}
+
+.lose p {
+	color: black;
+	background-color: red;
+}
+/* Komunikat */
+
+.screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 290px;
+	background-color: white;
+	border-bottom: 5px solid blueviolet;
+}
+
+.statement1,
+.statement2 {
+	text-align: center;
+}
+
+.statementwin {
+	font-size: 50px;
+	background-color: green;
+}
+
+.statementlose {
+	font-size: 50px;
+	background-color: red;
+}
+
+.statementdraw {
+	font-size: 50px;
+	background-color: rgb(0, 4, 255);
+}
+
+/* Kamien papier nożyce */
+.chooserps {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: space-evenly;
+	border-radius: 20px;
+}
+
+.rockpaperscissors {
+	display: block;
+	color: green;
+	font-size: 40px;
+	background-color: white;
+	padding-left: 24px;
+	padding-right: 24px;
+	border-radius: 10px;
+}
+.rockpaperscissors:hover,
+.rockpaperscissors:focus {
+	transition: color 0.3s, background-color 0.3s;
+	color: blue;
+	background-color: aquamarine;
+}
